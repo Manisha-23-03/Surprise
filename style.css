@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+    color: #E91E63;
+    font-size: 45px;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background:#ff4081;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e91e63;
+}
+#wish{
+    margin-top:30px;
+}
+
+#wish h2{
+    color:#FF5722;
+}
+
+#wish p{
+    color:#4E342E;
+}
+
+img{
+    margin-top:20px;
+    border-radius:15px;
+    width:300px;
+}
+.balloon{
+    position: fixed;
+    width: 50px;
+    height: 65px;
+    border-radius: 50%;
+    animation: float 8s infinite;
+    z-index: -1;
+}
+
+.balloon::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: gray;
+    left: 24px;
+    top: 65px;
+}
+
+.balloon1{
+    background: red;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.balloon2{
+    background: blue;
+    left: 35%;
+    animation-delay: 2s;
+}
+
+.balloon3{
+    background: green;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+.balloon4{
+    background: gold;
+    left: 85%;
+    animation-delay: 1s;
+}
+
+@keyframes float{
+    0%{
+        bottom: -120px;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+
+#quote {
+    margin-top: 30px;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+}
